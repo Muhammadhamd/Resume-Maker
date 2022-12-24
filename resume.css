@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.resume-section{
+    
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.resume{   
+     width: 800px;
+    min-height: 1000px;
+    background: white;
+    transform: scale(0.6);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.106);
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: -137px;
+}
+.resume header{
+    width: 100%;
+    height: 180px;
+    background-color: #303745;
+    padding: 30px  30px ;
+}
+.resume header .name-container{
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+
+}
+
+.resume header .headline-contaniner{
+color: #7b9ba2;
+font-size: 19px;
+}
+.resume header .em-container{
+    display: flex;
+    margin: 25px 0 0 0;
+}
+
+.resume header .address-container{
+    color: #7b9ba2;
+    margin: 0 25px 0 0;
+    font-size: 14px;
+}
+.resume header .email-container{
+    color: #7b9ba2;
+    margin: 0 25px 0 0;
+    font-size: 14px;
+}
+
+.resume-content{
+    display: flex;
+    width: 100%;
+    border: 2px solid;
+    height: 801px;
+
+}
+.resume .resume-content .right-content{
+    width: 40%;
+    padding:30px;
+}
+.resume .resume-content .left-content{
+    width: 60%;
+    padding:30px;
+
+}
+.resume .resume-content  .personal-details-container {
+    border-bottom: 1px solid rgb(225, 223, 223);
+    padding: 0 0 30px 0 ;
+    font-family: 'Times New Roman', Times, serif;
+}
+.resume .resume-content .personal-details-container div{
+    margin: 0 0 15px 0;
+    font-size: 17px;
+
+}
+

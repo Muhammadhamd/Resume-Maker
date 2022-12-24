@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-height: 100vh;
+    
+}
+.body-container{
+    display: flex;
+    max-width: 1366px;
+    max-height: 100vh;
+    width: 100%;
+
+}
+.form-section{
+    width: 50%;
+    height: 400px;
+}
+.form-section form{
+    padding: 30px;
+    overflow-y: scroll;
+    height: 660px;
+}
+.form-section form div{
+    font-size: 20px;
+    padding: 23px 0;
+    border-bottom: 1px solid rgb(114 122 151 / 40%);
+    margin: 10px;
+    font-family: monospace;
+}
+.form-section form div span{
+    display: flex;
+    justify-content: space-between;
+}
+.form-section form div span button{
+    padding: 10px;
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.form-section form div span button .fa-arrow-up{
+    transform: rotate(0deg);
+    transition: 0.4s;
+}
+.form-section form .personal-details .full-form{
+    display: block;
+    border: none;
+}
+
+.form-section form .personal-details .full-form input{
+    width: 100%;
+    padding: 16px 10px;
+    margin: 10px 0;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    background: #eeeee1d6;
+    
+}
+.form-section form .personal-details .full-form label{
+    color: #8a685f;
+    font-size: 19px;
+    font-family: none;
+}
+
+.resume-section{
+    width: 50%;
+    background-color: #f5f5f5;
+    height: 100%;
+    
+}
+
+.button-per{
+    display: flex;
+}
+.button-per button{
+    margin: 5px;
+    background-color: #8a685f;
+    color: white;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ;
+}
+.button-per button:hover{
+    transform: scale(1.1);
+}

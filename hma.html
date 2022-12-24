@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .full-form{
+        display: none;
+    }
+</style>
+<body>
+    <div class="personal-details">
+        <span class="form-head">
+          <h4>Personal details</h4>
+          <button><i class="fa fa-arrow-up"></i></button>
+        </span>
+        <div class="full-form">
+          <input type="text" id="name">
+        <input type="text" id="name">
+        <input type="text" id="passqord">
+        </div>
+      </div>
+    <script>
+
+const personalinfo_form = document.querySelector(".personal-details");
+const down_form_per = document.querySelector(".personal-details span button");
+const open_form_per = personalinfo_form.querySelector(".full-form");
+
+      down_form_per.onclick= function(event){
+        event.preventDefault();
+       
+        if(open_form_per.style.display ==="none") {
+            open_form_per.style.display = 'block';
+        }else{
+            personalinfo_form.querySelector(".full-form").style.display = 'none';
+        }
+
+        
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>calculate your age</h2>
+        </div>
+        <div class="inputdiv">
+            age in year: <input type="number" class="input" placeholder="your curret age in years" oninput="calculate_age(this)">
+        </div>
+        <div class="outputdiv">
+            age in days: <h3 class="days">&nbsp;</h3>  age in weeks: <h3 class="weeks">&nbsp;</h3>  age in Hours: <h3 class="hours">&nbsp;</h3>
+            age in min: <h3 class="min">&nbsp;</h3> age in second: <h3 class="sec">&nbsp;</h3>
+        </div>
+    </div>
+
+    <script>
+        function calculate_age(cal){
+
+            let days= cal.value * 365;
+            document.querySelector(".days").innerHTML = days + "days";
+
+            let weeks = cal.value * 52.1;
+         document.querySelector('.weeks').innerHTML = weeks + "weeks";
+
+         let hours = (24*365)*cal.value;
+         document.querySelector(".hours").innerHTML = hours + 'hours';
+
+         let min = ((60*24)*365)*cal.value;
+         document.querySelector(".min").innerHTML = min + 'minutes';
+
+         let sce = (((60*60)*24)*365)*cal.value;
+         document.querySelector(".sec").innerHTML = sce + 'secounds';
+        }
+    </script>
+</body>
+</html>
